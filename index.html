@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <!-- Metadati di base -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orogel - Sostenibilità</title>
+    <meta
+      name="description"
+      content="Iniziative di sostenibilità: territorio, filiera, energia e report."
+    />
+    <!-- Foglio di stile -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    <!-- HEADER
+     Contiene il logo e il menu di navigazione principale.
+     Su desktop il menu è sempre visibile, su mobile viene mostrato tramite il logo. -->
+    <header class="site-bar">
+      <div class="container site-bar-inner site-bar-centered">
+        
+        <!-- Navigazione sinistra (visibile solo su desktop) -->
+        <nav class="site-bar-nav site-bar-nav-left">
+          <a href="#chi-siamo">Azienda</a>
+          <a href="#sostenibilita">Sostenibilità</a>
+        </nav>
+        
+       <!-- Logo centrale.
+       Su mobile viene utilizzato come pulsante per aprire il menu. -->
+        <button
+          class="site-bar-logo logo-toggle"
+          aria-label="Apri menu"
+          aria-expanded="false"
+          type="button"
+        >
+          <img src="img/logo_orogel.png" alt="Orogel" />
+        </button>
+
+        <!-- Navigazione destra (visibile solo su desktop) -->
+        <nav class="site-bar-nav site-bar-nav-right">
+          <a href="#progetti-green">Progetti green</a>
+          <a href="#report" class="nav-highlight">Report</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MENU MOBILE
+     Menu a comparsa visualizzato solo su dispositivi mobili.
+     Viene aperto e chiuso tramite il logo. -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
+      <a href="#chi-siamo">Azienda</a>
+      <a href="#sostenibilita">Sostenibilità</a>
+      <a href="#progetti-green">Progetti green</a> <a href="#report">Report</a>
+    </nav>
+
+    <!-- CONTENUTO PRINCIPALE DELLA PAGINA -->
+    <main id="home">
+
+      <!-- HERO
+      Sezione introduttiva con messaggio principale e call to action. -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Verdure italiane, filiera responsabile, report trasparente</h1>
+            <p class="lead">
+              Un racconto chiaro del nostro modo di lavorare, dalle scelte
+              agricole ai processi industriali, con dati verificabili e
+              obiettivi concreti.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#progetti-green"
+                >Le nostre innovazioni</a
+              >
+              <a class="btn btn-ghost" href="#sostenibilita"
+                >La sostenibilità al primo posto</a
+              >
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <div class="media-card">
+              <img src="img/insalata.jpg" alt="" />
+              <div class="media-overlay">
+                <p class="media-title">Dal campo alla tavola</p>
+                <p class="media-subtitle">
+                  Qualità, efficienza e attenzione alle risorse.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEZIONE AZIENDA
+     Presenta l’identità aziendale, il territorio e la filiera produttiva. -->
+      <section id="chi-siamo" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Azienda</h2>
+            <p class="muted">
+              Siamo una cooperativa agricola che lavora con agricoltori e
+              stabilimenti italiani. Utilizziamo metodi e tempistiche
+              controllate per gestire al meglio il prodotto finale e mantenere
+              rapporti diretti con chi produce. Il nostro lavoro sulla
+              sostenibilità parte da qui.
+            </p>
+          </div>
+          <div class="grid-3">
+            <article class="card card--azienda card--azienda-identita">
+
+              <!-- Identità -->
+              <h3>Identità</h3>
+              <img
+                class="card-media"
+                src="img/contadino.jpg"
+                alt="Identità e valori"
+              />
+              <p class="muted">
+                Un modello di cooperativa agricola basato sulle persone, sul
+                lavoro condiviso e su scelte produttive responsabili.
+              </p>
+              <ul class="list">
+                <li>Rapporti diretti con i soci produttori</li>
+                <li>Scelte orientate al lungo periodo</li>
+                <li>Attenzione costante a qualità e sicurezza</li>
+              </ul>
+            </article>
+            <article class="card card--azienda card--azienda-territorio">
+
+              <!-- Territorio -->
+              <h3>Territorio</h3>
+              <img
+                class="card-media"
+                src="img/territorio.jpg"
+                alt="Territorio e campi"
+              />
+              <p class="muted">
+                Il nostro lavoro nasce nei territori in cui operiamo,
+                valorizzando competenze locali e vocazione agricola delle aree
+                di coltivazione.
+              </p>
+              <ul class="list">
+                <li>Rapporto con i produttori locali</li>
+                <li>Stagionalità</li>
+                <li>Sviluppo legato all’agricoltura italiana</li>
+              </ul>
+            </article>
+            <article class="card card--azienda card--azienda-filiera">
+              
+              <!-- Filiera -->
+              <h3>Filiera</h3>
+              <img
+                class="card-media"
+                src="img/surgelati.jpg"
+                alt="Filiera e lavorazione"
+              />
+              <p class="muted">
+                Gestiamo internamente ogni fase della filiera per garantire
+                controllo, tracciabilità e continuità tra campo e stabilimento.
+              </p>
+              <ul class="list">
+                <li>Standard e controlli</li>
+                <li>Coordinamento diretto tra agricoltura e industria</li>
+                <li>Riduzione sprechi</li>
+                <li>Tracciabilità delle materie prime</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Indicatori di impatto
+          Sintesi di alcuni dati su energia, acqua e riduzione degli sprechi. -->
+          <div class="kpi-grid">
+            <div class="kpi">
+              <p class="kpi-value">Energia</p>
+              <p class="kpi-label">
+                Riduciamo i consumi energetici per tonnellata di prodotto. Dal
+                2010 al 2024 le emissioni sono scese da 633 a 514 kg di CO₂
+                equivalente. Usiamo fotovoltaico e cogenerazione nei nostri
+                stabilimenti.
+              </p>
+            </div>
+            <div class="kpi">
+              <p class="kpi-value">Acqua</p>
+              <p class="kpi-label">
+                L’acqua viene recuperata e riutilizzata nei processi produttivi.
+                Ogni anno recuperiamo circa 250.000 m³, l’equivalente di 110
+                piscine olimpioniche. Un modo concreto per limitare i prelievi.
+              </p>
+            </div>
+            <div class="kpi">
+              <p class="kpi-value">Sprechi</p>
+              <p class="kpi-label">
+                Interveniamo su impianti e processi per ridurre scarti e
+                perdite. Alcune innovazioni hanno permesso di evitare circa 100
+                tonnellate di CO₂ all’anno. Meno sprechi, più efficienza lungo
+                la filiera.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEZIONE SOSTENIBILITÀ
+     Sintesi delle azioni ambientali, sociali ed economiche. -->
+      <section id="sostenibilita" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Sostenibilità</h2>
+            <p class="muted">
+              Ridurre l’impatto significa intervenire sui processi, ogni giorno,
+              migliorando l’uso delle risorse e rendendo la produzione più
+              efficiente.
+            </p>
+            <p class="muted">
+              Qui sotto trovi una sintesi per ciascuna e il collegamento diretto
+              al report.
+            </p>
+          </div>
+
+          <!-- Card di sintesi per le tre dimensioni della sostenibilità -->
+          <div class="grid-3">
+            <article class="card card--ambientale">
+              <h3>Sostenibilità ambientale</h3>
+              <img
+                class="card-media"
+                src="img/sostenibilità.jpg"
+                alt="Sostenibilità ambientale"
+              />
+              <p class="muted">
+                È parte del nostro modo di produrre, dall’uso delle risorse alla
+                gestione dei processi.
+              </p>
+              <ul class="list">
+                <li>
+                  Riduzione delle emissioni: –119 kg di CO₂ per tonnellata di
+                  prodotto dal 2010 al 2024
+                </li>
+                <li>
+                  Recupero annuale di circa 250.000 m³ di acqua nei processi
+                  industriali
+                </li>
+                <li>
+                  Innovazioni di impianto che evitano circa 100 tonnellate di
+                  CO₂ all’anno
+                </li>
+              </ul>
+            </article>
+            <article class="card card--sociale">
+              <h3>Sostenibilità sociale</h3>
+              <img
+                class="card-media"
+                src="img/farm.jpg"
+                alt="Sostenibilità sociale"
+              />
+              <p class="muted">
+                Mettiamo al centro le persone, il lavoro e il legame con il
+                territorio in cui operiamo.
+              </p>
+              <ul class="list">
+                <li>
+                  Oltre 1.500 soci e 2.300 dipendenti coinvolti nella
+                  cooperativa
+                </li>
+                <li>
+                  Sistema di gestione per salute e sicurezza conforme alla ISO
+                  45001
+                </li>
+                <li>
+                  Politiche di welfare aziendale a supporto di lavoro e vita
+                  privata
+                </li>
+                <li>
+                  Iniziative sociali, culturali e di inclusione sul territorio
+                </li>
+              </ul>
+            </article>
+            <article class="card card--economica">
+              <h3>Sostenibilità economica</h3>
+              <img
+                class="card-media"
+                src="img/economia.jpg"
+                alt="Sostenibilità economica"
+              />
+              <p class="muted">
+                Creiamo valore nel tempo, reinvestendo risorse nel lavoro, nel
+                territorio e nella filiera cooperativa.
+              </p>
+              <ul class="list">
+                <li>
+                  Modello cooperativo che redistribuisce valore tra soci e
+                  territorio
+                </li>
+                <li>
+                  Destinazione del 5% degli utili a iniziative sociali,
+                  culturali e solidali
+                </li>
+                <li>
+                  Sostegno a fondazioni e progetti locali per uno sviluppo
+                  condiviso
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      
+    <!-- SEZIONE PROGETTI GREEN
+     Approfondimento di tre progetti legati a innovazione e sostenibilità. -->
+      <section id="progetti-green" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Progetti green</h2>
+            <p class="muted">
+              Tre progetti in corso. Qui trovi cosa facciamo e perché conta.
+            </p>
+          </div>
+
+          <!-- Progetto 1:
+          Intervento sulla logistica per migliorare efficienza e ridurre l’impatto ambientale. -->
+          <article class="project project--energia">
+            <div class="project-content">
+              <h3>Logistica intelligente e sostenibile</h3>
+              <p class="muted">
+                Nell’ambito di una misura PNRR dedicata allo sviluppo della
+                logistica agroalimentare, è stato approvato un progetto di
+                sviluppo per le attività di trasformazione e commercializzazione
+                dei prodotti agricoli. Il programma prevede il potenziamento
+                della logistica interna attraverso la realizzazione di una nuova
+                cella frigorifera automatizzata, con l’obiettivo di migliorare
+                l’efficienza operativa e ridurre l’impatto ambientale.
+              </p>
+              <ul class="list">
+                <li>Realizzazione di una cella frigorifera automatizzata</li>
+                <li>Riduzione dei consumi e dell’impatto ambientale</li>
+                <li>Ottimizzazione dei flussi logistici interni</li>
+                <li>Avanzamento della digitalizzazione dei processi</li>
+              </ul>
+            </div>
+            <div class="project-media">
+              <img
+                src="img/logistica.jpg"
+                alt="Logistica e celle frigorifere"
+              />
+            </div>
+          </article>
+
+          <!-- Progetto 2:
+          Programma di innovazione agricola finanziato dal PSR Emilia-Romagna. -->
+          <article class="project project--acqua project--reverse">
+            <div class="project-content">
+              <h3>Programma di Sviluppo Rurale dell'Emilia-Romagna</h3>
+              <p class="muted">
+                Orogel è beneficiaria di un contributo FEASR nell’ambito del PSR
+                Emilia-Romagna 2014–2020, a supporto di un Piano di Innovazione
+                dedicato allo sviluppo di nuove varietà, tecniche colturali e
+                processi per il settore orticolo. Il progetto si inserisce in un
+                più ampio Progetto di Filiera e ha come obiettivo il
+                miglioramento della fase agricola, con un’attenzione specifica
+                alla sostenibilità e alla riduzione dei residui.
+              </p>
+              <ul class="list">
+                <li>
+                  Sperimentazione di nuove varietà orticole per il mercato
+                  fresco e surgelato
+                </li>
+                <li>Sviluppo di tecniche colturali a minore impatto</li>
+                <li>Innovazione dei processi agricoli lungo la filiera</li>
+                <li>Percorso verso produzioni a residuo zero</li>
+                <li>
+                  Rafforzamento della collaborazione tra i soggetti della
+                  filiera
+                </li>
+              </ul>
+            </div>
+            <div class="project-media">
+              <img src="img/emilia.jpg" alt="Progetto PSR Emilia-Romagna" />
+            </div>
+          </article>
+
+          <!-- Progetto 3:
+          Progetto di ricerca su prevenzione, sostenibilità e adattamento climatico. -->
+          <article class="project project--packaging">
+            <div class="project-content">
+              <h3>MAC - Maculatura bruna del pero</h3>
+              <p class="muted">
+                Il progetto MAC – Maculatura bruna del pero è stato realizzato
+                nell’ambito del Programma regionale di sviluppo rurale
+                2014–2020. L’iniziativa è dedicata allo studio degli agenti
+                causali della malattia e allo sviluppo di tecniche innovative di
+                prevenzione e contenimento, tenendo conto degli effetti dei
+                cambiamenti climatici. Il progetto rientra nelle attività dei
+                Gruppi Operativi per l’Innovazione e mira a migliorare la
+                sostenibilità e la produttività delle coltivazioni.
+              </p>
+              <h4>Elementi principali del progetto</h4>
+              <ul class="list">
+                <li>
+                  Approfondimento sugli agenti responsabili della maculatura
+                  bruna del pero
+                </li>
+                <li>
+                  Sviluppo di tecniche innovative di prevenzione e contenimento
+                </li>
+                <li>
+                  Adattamento delle pratiche agricole ai cambiamenti climatici
+                </li>
+                <li>
+                  Miglioramento della sostenibilità delle produzioni frutticole
+                </li>
+                <li>Collaborazione tra ricerca e imprese agricole</li>
+              </ul>
+              <h4>Dati di progetto</h4>
+              <ul class="list">
+                <li>Costo complessivo: € 379.799,62</li>
+                <li>Contributo concesso: € 341.819,66</li>
+                <li>Domanda n. 5150379</li>
+                <li>Capofila: OI Pera</li>
+              </ul>
+            </div>
+            <div class="project-media">
+              <img src="img/pero.jpg" alt="Progetto MAC - pero" />
+            </div>
+          </article>
+        </div>
+      </section>\
+      
+      <!-- SEZIONE REPORT
+      Area dedicata al download del report di sostenibilità. -->
+      <section id="report" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Report</h2>
+            <p class="muted">Scarica il documento completo.</p>
+          </div>
+          <div class="report-layout">
+
+            <!-- Colonna sinistra:
+               Download del report e riepilogo dei contenuti principali. -->
+            <article class="report-panel report-panel--download">
+              <header class="report-panel-head">
+                <div>
+                  <p class="report-kicker">Report di sostenibilità</p>
+                  <h3 class="report-title">Edizione 2025</h3>
+                </div>
+                <span class="report-badge">PDF</span>
+              </header>
+              <p class="muted">
+                Documento completo con risultati, azioni e obiettivi su
+                ambiente, persone e filiera.
+              </p>
+              <ul class="report-points">
+                <li>Ambiente: energia, acqua, rifiuti</li>
+                <li>Sociale: persone, sicurezza, comunità</li>
+                <li>Economico: filiera, qualità, continuità</li>
+              </ul>
+              <div class="report-actions">
+                <a
+                  class="btn btn-primary btn-block"
+                  href="documenti/report_2025.pdf"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Scarica PDF
+                </a>
+              </div>
+            </article>
+
+           <!-- Colonna destra:
+            Spiegazione di cosa contiene il report e collegamenti utili. -->
+            <aside
+              class="report-panel report-panel--info"
+              aria-label="Contenuti del report"
+            >
+              <h3 class="report-side-title">Cosa trovi nel report</h3>
+              <div class="report-chips">
+                <span class="chip">Ambiente</span>
+                <span class="chip">Persone</span>
+                <span class="chip">Economia</span>
+              </div>
+              <div class="report-divider"></div>
+              <ul class="report-side-list">
+                <li><strong>Attività:</strong> progetti e iniziative</li>
+                <li><strong>Dati:</strong> indicatori e andamento</li>
+                <li><strong>Obiettivi:</strong> impegni e prossimi step</li>
+              </ul>
+              <div class="report-divider"></div>
+              <p class="muted">
+                Vuoi un accesso rapido? Vai anche a
+                <a class="report-link" href="#progetti-green">Progetti green</a
+                >.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER
+     Informazioni di chiusura, navigazione secondaria e contatti. -->
+    <footer class="site-bar site-bar-footer">
+      <div class="container site-bar-footer-inner">
+        <div class="footer-block">
+          <strong>Orogel</strong>
+          <p>Progetto universitario sulla sostenibilità d'impresa.</p>
+        </div>
+        <div class="footer-block">
+          <strong>Sezioni</strong> <a href="#chi-siamo">Azienda</a>
+          <a href="#sostenibilita">Sostenibilità</a>
+          <a href="#progetti-green">Progetti green</a>
+          <a href="#report">Report</a>
+        </div>
+        <div class="footer-block">
+          <strong>Contatti</strong>
+          <a href="https://www.unipegaso.it">Università Pegaso</a>
+          <span>Andrea D'Alessio 0312301392</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVA SCRIPT
+     Gestisce l’apertura e la chiusura del menu mobile. -->
+    <script>
+      const btn = document.querySelector(".logo-toggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (btn && mobileMenu) {
+        btn.addEventListener("click", () => {
+          const open = mobileMenu.classList.toggle("is-open");
+          btn.classList.toggle("is-open", open);
+          btn.setAttribute("aria-expanded", String(open));
+          document.body.classList.toggle("no-scroll", open);
+        });
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.remove("is-open");
+            btn.classList.remove("is-open");
+            btn.setAttribute("aria-expanded", "false");
+            document.body.classList.remove("no-scroll");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
