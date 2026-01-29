@@ -35,10 +35,15 @@ Il sito è **responsive** e ottimizzato per desktop, tablet e dispositivi mobili
 
 /
 ├── index.html        # Pagina principale del sito
+
 ├── css/
 │   └── style.css     # Foglio di stile unico
+
 ├── img/
 │   └── *.jpg / *.png # Immagini utilizzate nel sito
+
 ├── documenti/
 │   └── report_2025.pdf 
+
 └── README.md
+
