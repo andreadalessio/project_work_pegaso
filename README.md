@@ -33,7 +33,6 @@ Il sito è **responsive** e ottimizzato per desktop, tablet e dispositivi mobili
 
 ## 🗂️ Struttura delle cartelle
 
-/
 ├── index.html        # Pagina principale del sito
 
 ├── css/
@@ -46,4 +45,5 @@ Il sito è **responsive** e ottimizzato per desktop, tablet e dispositivi mobili
 │   └── report_2025.pdf 
 
 └── README.md
+
 
